@@ -7,6 +7,7 @@ library(tidyverse)
 library(janitor)
 library(rgbif)
 library(ggplot2)
+library(sf)
 
 # Import data -------------------------------------------------------------
 
@@ -67,11 +68,47 @@ QCSb_subset <- QCSB_joined %>%
   filter(nombre_de_nicheurs_number_of_breeders != 0) %>% 
   group_by(espece_species_en) %>% 
   mutate(n = n()) %>% ungroup %>% 
-  filter( n >= 30) %>% 
+  filter( n >= 30)
+
+QCSb_subset_sum <- QCSb_subset %>% 
   group_by(annee_year, espece_species_en) %>% 
   summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup
 
-QCSb_subset %>% 
+QCSb_subset_sum %>% 
+  ggplot(aes(x = annee_year, y = total, color = espece_species_en)) +
+  geom_point() + geom_smooth(se = F) +
+  scale_y_log10()
+
+QCSb_subset_sum_col <- QCSb_subset %>% 
+  group_by(annee_year, espece_species_en, numero_de_colonie_colony_number, 
+           centroide_x, centroide_y) %>% 
+  summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup
+
+QCSb_subset_sum_col %>% 
   ggplot(aes(x = annee_year, y = total, color = espece_species_en)) +
   geom_point() + geom_smooth(se = T) +
   scale_y_log10()
+
+canada <- st_read("data/raw/canada_shp/gpr_000a11a_e.shp")
+
+QCSb_subset_sum_col %>% 
+  filter(annee_year > 2010) %>% 
+  ggplot(aes(x = centroide_x, y = centroide_y, 
+             color = espece_species_en)) +
+  geom_point(aes(size = total)) +
+  facet_wrap(~annee_year)
+
+test <- st_as_sf(QCSb_subset_sum_col, coords = c("centroide_x", "centroide_y")) %>% 
+  st_set_crs(4326) %>% 
+  st_transform(st_crs(canada))
+test_2 <- test %>%  filter(annee_year > 2010)
+test_2 <- st_crop(test_2, test_2)
+
+canada_cropped <- st_crop(canada, test)
+
+ggplot() +
+  geom_sf(data = canada_cropped) + 
+  geom_sf(data = test_2, 
+         aes(col = espece_species_en, size = total)) +
+  facet_wrap(~annee_year)
+  
