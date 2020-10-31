@@ -11,12 +11,18 @@ library(sf)
 
 # Import data -------------------------------------------------------------
 
+# Trends 
 # https://open.canada.ca/data/en/dataset/2d533032-3dc2-4302-b831-65e1bdcf78e7
 trends <- read_csv("data/raw/trends-bird-populations.csv")
+# Long term trends
 # https://open.canada.ca/data/en/dataset/766a71ce-d798-49e2-bee2-7ec65c7c5d56
 long_term <- read_csv("data/raw/long-term-changes-bird-populations.csv")
 # QC seabirds
 QCSB <- read_csv("data/raw/CDQS_BIOMQ_2017.csv")
+
+# Set ggplot theme --------------------------------------------------------
+
+theme_set(theme_bw())
 
 # Clean data --------------------------------------------------------------
 
@@ -28,7 +34,7 @@ trends_clean <- trends %>%
   pivot_longer(cols = 2:ncol(.), 
                names_to = "species_group") %>% 
   mutate(species_group = str_remove(species_group, pattern = "[ ]\\(.*")) %>% 
-  mutate(species_group =  snakecase::to_snake_case(tolower(species_group))) %>% 
+  # mutate(species_group =  snakecase::to_snake_case(tolower(species_group))) %>% 
   mutate(value = as.numeric(ifelse(value == "n/a", NA, value))) 
 
 long_term_clean <- long_term %>% 
@@ -49,7 +55,7 @@ trends_seabirds <- long_term_clean %>%
   filter(species_group == 'Seabirds')
 # 15 species
 sort(unique(QCSB_clean$espece_species_en)) %in% 
-  sort(unique(trends_seabirds$species))
+  sort(unique(trends_seabirds$species)) %>% sum()
 
 # Join --------------------------------------------------------------------
 
@@ -59,8 +65,13 @@ QCSB_joined <- QCSB_clean %>%
 # Basic vizualization -----------------------------------------------------
 
 trends_clean %>% 
+  # filter(species_group %in% c("seabirds", "aerial_insectivores")) %>% 
   ggplot(aes(x = year, y = value)) +
-  geom_line(aes(col = species_group))
+  geom_line(aes(col = species_group)) +
+  labs(x = "Year (19070 - 2016)", 
+       y = "% change since 1970", 
+       col = "Taxonomic group") +
+  scale_color_viridis_d()
 
 QCSb_subset <- QCSB_joined %>% 
   filter(!is.na(status)) %>% 
