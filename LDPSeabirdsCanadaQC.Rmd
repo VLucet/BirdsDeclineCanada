@@ -1,0 +1,22 @@
+---
+title: "LDP - Assignment 2 Report"
+author: "Valentin Lucet, Sherry Young, Alexandra McCallum, Jihyun Kim"
+date: "31/10/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+
+## Introduction
+
+## Methods
+
+## Results
+
+## Discussion
+
+## Bibliography
