@@ -62,6 +62,11 @@ sort(unique(QCSB_clean$espece_species_en)) %in%
 QCSB_joined <- QCSB_clean %>% 
   left_join(trends_seabirds, by = c("espece_species_en" = "species"))
 
+# Export clean data -------------------------------------------------------
+
+write_csv(trends_clean, "data/clean/trends_clean.csv")
+write_csv()
+
 # Basic vizualization -----------------------------------------------------
 
 trends_clean %>% 
