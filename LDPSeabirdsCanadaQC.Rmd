@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # Load packages
 library(tidyverse)
 library(ggplot2)
+library(gt)
 
 # Set ggplot theme
 theme_set(theme_bw())
@@ -98,10 +99,22 @@ QCSB_subset_mean_model <- QCSB_subset_model %>%
   right_join(QCSB_subset_mean, by = "espece_species_en") 
 
 # Join to compare with federal data
-QCSB_subset_model %>% 
+QCSB_table <- QCSB_subset_model %>% 
   left_join(long_term_clean_sb, by = c("espece_species_en" = "species" )) %>% 
   select(espece_species_en, percent_change, status, status_QC) %>% 
   mutate(matching = (status == status_QC))
+```
+
+```{r format table}
+QCSB_table %>%
+  select(-matching) %>%
+  arrange(espece_species_en) %>%
+  gt() %>%
+  # tab_header(title = "Trends in Seabirds populations in Canada vs in Quebec") %>%
+  tab_spanner(label = "Status", columns = vars(status, status_QC)) %>%
+  fmt_percent("percent_change", scale_values = FALSE, decimals=2) %>%
+  cols_label(espece_species_en = "Species", percent_change = html("Percent Change in Quebec<br>(1970 - 2016)"), status = "Canada", status_QC = "Quebec") %>%
+  data_color(apply_to = "text", columns = vars(percent_change), colors = scales::col_bin(palette = c("firebrick", "slategray3", "chartreuse3"), bins = c(min(percent_change),-range,range,max(percent_change))))
 ```
 
 ```{r Trends_QC_abundance_fig2, warning=FALSE}
