@@ -5,9 +5,7 @@
 
 library(tidyverse)
 library(janitor)
-library(rgbif)
-library(ggplot2)
-library(sf)
+# library(sf)
 
 # Import data -------------------------------------------------------------
 
@@ -19,10 +17,6 @@ trends <- read_csv("data/raw/trends-bird-populations.csv")
 long_term <- read_csv("data/raw/long-term-changes-bird-populations.csv")
 # QC seabirds
 QCSB <- read_csv("data/raw/CDQS_BIOMQ_2017.csv")
-
-# Set ggplot theme --------------------------------------------------------
-
-theme_set(theme_bw())
 
 # Clean data --------------------------------------------------------------
 
@@ -65,30 +59,33 @@ QCSB_joined <- QCSB_clean %>%
 # Export clean data -------------------------------------------------------
 
 write_csv(trends_clean, "data/clean/trends_clean.csv")
-write_csv()
+write_csv(long_term_clean, "data/clean/long_term_clean.csv")
+write_csv(QCSB_joined, "data/clean/QCSB_joined_clean.csv")
+
+# -------------------------------------------------------------------------
 
 # Basic vizualization -----------------------------------------------------
 
-trends_clean %>% 
-  # filter(species_group %in% c("seabirds", "aerial_insectivores")) %>% 
-  ggplot(aes(x = year, y = value)) +
-  geom_line(aes(col = species_group)) +
-  labs(x = "Year (19070 - 2016)", 
-       y = "% change since 1970", 
-       col = "Taxonomic group") +
-  scale_color_viridis_d()
+# trends_clean %>% 
+#   # filter(species_group %in% c("seabirds", "aerial_insectivores")) %>% 
+#   ggplot(aes(x = year, y = value)) +
+#   geom_line(aes(col = species_group)) +
+#   labs(x = "Year (19070 - 2016)", 
+#        y = "% change since 1970", 
+#        col = "Taxonomic group") +
+#   scale_color_viridis_d()
 
-QCSb_subset <- QCSB_joined %>% 
-  filter(!is.na(status)) %>% 
-  filter(annee_year >1970) %>% 
-  filter(nombre_de_nicheurs_number_of_breeders != 0) %>% 
-  group_by(espece_species_en) %>% 
-  mutate(n = n()) %>% ungroup %>% 
-  filter( n >= 30)
+# QCSb_subset <- QCSB_joined %>% 
+#   filter(!is.na(status)) %>% 
+#   filter(annee_year >= 1970) %>% 
+#   filter(nombre_de_nicheurs_number_of_breeders != 0) %>% 
+#   group_by(espece_species_en) %>% 
+#   mutate(n = n()) %>% ungroup %>% 
+#   filter( n >= 30)
 
-QCSb_subset_sum <- QCSb_subset %>% 
-  group_by(annee_year, espece_species_en) %>% 
-  summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup
+# QCSb_subset_sum <- QCSb_subset %>% 
+#   group_by(annee_year, espece_species_en) %>% 
+#   summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup
 
 QCSb_subset_sum %>% 
   ggplot(aes(x = annee_year, y = total, color = espece_species_en)) +

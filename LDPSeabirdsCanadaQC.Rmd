@@ -6,7 +6,14 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+
+# Load packages
+library(tidyverse)
+library(ggplot2)
+
+# Set ggplot theme
+theme_set(theme_bw())
 ```
 
 ## Abstract
@@ -14,6 +21,125 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Introduction
 
 ## Methods
+
+```{r Import, include=FALSE}
+trends_clean <- read_csv("data/clean/trends_clean.csv")
+long_term_clean <- read_csv("data/clean/long_term_clean.csv")
+QCSB_joined <- read_csv("data/clean/QCSB_joined_clean.csv")
+```
+
+```{r Trends_fig1, warning=FALSE}
+trends_clean %>% 
+  ggplot(aes(x = year, y = value)) +
+  geom_line(aes(col = species_group)) +
+  labs(x = "Year (19070 - 2016)", 
+       y = "% change since 1970", 
+       col = "Taxonomic group", 
+       title = "Change in canadian birds abundance 1970 - 2016 by taxonomic group") +
+  scale_color_viridis_d()
+```
+```{r Subset_summarise, warning=FALSE, include=FALSE}
+# Subset long terms to seabirds only
+long_term_clean_sb <- long_term_clean %>% 
+  filter(species_group == "Seabirds")
+
+# Subset data
+QCSB_subset <- QCSB_joined %>% 
+  # Only keep species for which we have federal data
+  filter(!is.na(status)) %>% 
+  # Only after 1970, and we remove 0 years
+  filter(annee_year >= 1970) %>% 
+  filter(nombre_de_nicheurs_number_of_breeders != 0) %>% 
+  # Select the species only if we have more than 30 observations
+  group_by(espece_species_en) %>% 
+  mutate(n = n()) %>% ungroup %>% 
+  filter( n >= 30)
+
+QCSB_subset_sum <- QCSB_subset %>% 
+  # Calculate sum for each year and species
+  group_by(annee_year, espece_species_en) %>% 
+  summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup
+
+QCSB_subset_pct <- QCSB_subset %>% 
+  # Calculate mean for each year and species
+  group_by(numero_de_colonie_colony_number, annee_year, espece_species_en) %>% 
+  summarise(total = sum(nombre_de_nicheurs_number_of_breeders)) %>% ungroup() %>% 
+  group_by(numero_de_colonie_colony_number, espece_species_en) %>% 
+  mutate(baseline_year = min(annee_year)) %>% ungroup() %>% 
+  right_join(rename(select(filter(., annee_year == baseline_year), -c("annee_year")), 
+                    baseline = total), 
+             by = c("numero_de_colonie_colony_number", "espece_species_en")) %>% 
+  mutate(change = ((total-baseline)/baseline)*100)
+
+QCSB_subset_mean <- QCSB_subset %>% 
+  # Calculate mean for each year and species
+  group_by(annee_year, espece_species_en) %>% 
+  summarise(mean = mean(nombre_de_nicheurs_number_of_breeders)) %>% ungroup()
+
+# Choose range for stable
+range <- 15
+
+# Model mean abundances and extract info
+QCSB_subset_model <- QCSB_subset_mean %>% 
+  nest(data = c(annee_year, mean)) %>%  
+  mutate(model = map(data, function(df) loess(mean ~ annee_year, data = df))) %>% 
+  mutate(preds = map(model, predict)) %>% 
+  mutate(start_pred = map_dbl(preds, function(vec) first(vec))) %>% 
+  mutate(end_pred = map_dbl(preds, function(vec) last(vec))) %>% 
+  mutate(percent_change = ((end_pred-start_pred)/start_pred)*100) %>% 
+  mutate(color_code = ifelse(percent_change <= range & percent_change >= -range, "grey", 
+                             ifelse(percent_change < 0, "red", "green"))) %>% 
+  mutate(status_QC = ifelse(percent_change <= range & percent_change >= -range, "Stable", 
+                            ifelse(percent_change < 0, "Decreasing", "Increasing"))) %>%
+  select(espece_species_en, percent_change, status_QC, color_code) 
+
+# Join to subset dataset
+QCSB_subset_mean_model <- QCSB_subset_model %>% 
+  right_join(QCSB_subset_mean, by = "espece_species_en") 
+
+# Join to compare with federal data
+QCSB_subset_model %>% 
+  left_join(long_term_clean_sb, by = c("espece_species_en" = "species" )) %>% 
+  select(espece_species_en, percent_change, status, status_QC) %>% 
+  mutate(matching = (status == status_QC))
+```
+
+```{r Trends_QC_abundance_fig2, warning=FALSE}
+QCSB_subset_sum %>% 
+  ggplot(aes(x = annee_year, y = total, color = espece_species_en)) +
+  geom_point() + geom_smooth(se = F) +
+  scale_y_log10() +
+  scale_color_viridis_d() +
+  labs(x = "Year (1970 - 2016)", 
+       y = "Total abundance, all colonies (log)", 
+       col = "Species")
+```
+```{r message=FALSE, warning=FALSE}
+QCSB_subset_pct %>% 
+  mutate(numero_de_colonie_colony_number_fct = as.factor(numero_de_colonie_colony_number)) %>% 
+  ggplot(aes(x = annee_year, y = change, group = numero_de_colonie_colony_number_fct)) +
+  geom_line() +
+  geom_smooth(aes(x = annee_year, y = change), inherit.aes = FALSE) +
+  facet_wrap(~espece_species_en, scales = "free") +
+  #scale_color_viridis_d() +
+  labs(x = "Year (1970 - 2016)", 
+       y = "% change since 1970 per colony", 
+       col = "Colony Number") + theme(legend.position = "none") 
+```
+```{r Meam_smoothed_color_fig3, message=FALSE, warning=FALSE}
+QCSB_subset_mean_model %>% 
+  # make figure
+  ggplot(aes(x = annee_year, y = mean)) +
+  geom_line() +
+  geom_smooth(method = "loess") +
+  facet_wrap(~espece_species_en, scales = "free") +
+  #scale_color_viridis_d() +
+  labs(x = "Year", 
+       y = "Average abundance", 
+       col = "Colony Number") + 
+  theme(legend.position = "none")
+
+```
 
 ## Results
 
