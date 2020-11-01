@@ -105,16 +105,33 @@ QCSB_table <- QCSB_subset_model %>%
   mutate(matching = (status == status_QC))
 ```
 
-```{r format table}
+```{r format table, message=FALSE, warning=FALSE}
+alpha_val <- 0.7
 QCSB_table %>%
   select(-matching) %>%
   arrange(espece_species_en) %>%
   gt() %>%
   # tab_header(title = "Trends in Seabirds populations in Canada vs in Quebec") %>%
   tab_spanner(label = "Status", columns = vars(status, status_QC)) %>%
+  tab_spanner(label = "% Change in QC ", columns = vars(percent_change)) %>%
   fmt_percent("percent_change", scale_values = FALSE, decimals=2) %>%
-  cols_label(espece_species_en = "Species", percent_change = html("Percent Change in Quebec<br>(1970 - 2016)"), status = "Canada", status_QC = "Quebec") %>%
-  data_color(apply_to = "text", columns = vars(percent_change), colors = scales::col_bin(palette = c("firebrick", "slategray3", "chartreuse3"), bins = c(min(percent_change),-range,range,max(percent_change))))
+  cols_label(espece_species_en = "Species", 
+             percent_change = md("(1970 - 2016)"), 
+             status = "Canada", 
+             status_QC = "Quebec") %>%
+  data_color(apply_to = "text", 
+             columns = vars(percent_change), 
+             colors = scales::col_bin(
+               palette =c("firebrick", "slategray3", "chartreuse3"),
+               bins = c(min(percent_change),-range,range,max(percent_change)))) %>% 
+  data_color(apply_to = "fill", 
+             alpha = alpha_val,
+             autocolor_text = FALSE,
+             columns = vars(status, status_QC), 
+             colors = scales::col_factor(
+               palette = c("gray19","firebrick","chartreuse3","slategray3"),
+               domain = c("Data deficient ","Increasing", "Decreasing", "Stable")
+             ))
 ```
 
 ```{r Trends_QC_abundance_fig2, warning=FALSE}
