@@ -2,6 +2,8 @@
 title: "LDP - Assignment 2 Report"
 author: "Valentin Lucet, Sherry Young, Alexandra McCallum, Jihyun Kim"
 date: "31/10/2020"
+header-includes:
+- \usepackage{setspace}\doublespacing 
 output: 
   pdf_document: 
     toc: FALSE
@@ -135,6 +137,7 @@ QCSB_subset_pct %>%
 ```
 ```{r Meam_smoothed_color_fig3, message=FALSE, warning=FALSE}
 QCSB_subset_mean_model %>% 
+  # mutate(mean = log(mean)) %>% 
   # make figure
   ggplot(aes(x = annee_year, y = mean)) +
   geom_line() +
