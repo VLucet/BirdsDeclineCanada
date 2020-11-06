@@ -1,7 +1,7 @@
 ---
-title: "LDP - Assignment 2 Mock Manuscript"
-author: "Alexandra McCallum, Valentin Lucet, Jihyun Kim, Sherry Young, "
-date: "31/10/2020"
+title: "Are the trends in Quebec seabird abundances reflective of the Canada-wide trends?"
+subtitle: "LDP Reproducibility course - Assignment 2 Mock Manuscript"
+author: "Alexandra McCallum, Valentin Lucet, Jihyun Kim, Sherry Young"
 header-includes:
 - \usepackage{setspace}\doublespacing 
 - \usepackage[style=authoryear-comp]{biblatex}
@@ -33,13 +33,13 @@ Northern seabirds are key players in the environment and valuable bioindicators.
 
 ## Methods
 
-We obtained two Canada-wide datasets for federal trends in bird abundance from the open government portal. A first dataset was concerned with the percentage change in bird abundance for different bird functional groups from 1970 to 2016 [@OGP_trends_2020]. From this dataset we produced figure 1 by simply plotting the percentage change over time. The second dataset was concerned with characterizing species-specific trends in abundance as either stable, decreasing or increasing [@OGP_trends_2020_2]. This dataset is derived from an important modelling effort for a large number of bird species in Canada. We used this dataset to obtain the status of 58 different species of seabirds at the federal level.
+We obtained two Canada-wide datasets for federal trends in bird abundance from the open government portal. A first dataset was concerned with the percentage change in bird abundance for different bird functional groups from 1970 to 2016 [@OGP_trends_2020]. From this dataset we produced Figure 1 by simply plotting the percentage change over time. The second dataset was concerned with characterizing species-specific trends in abundance as either stable, decreasing or increasing [@OGP_trends_2020_2]. This dataset is derived from an important modelling effort for a large number of bird species in Canada. We used this dataset to obtain the status of 58 different species of seabirds at the federal level.
 
-We then accessed the Computerized Database of Québec Seabirds [@CDQS_2020] (CDQS), which contains monitoring data from a number of seabird colonies in Quebec. We crossed reference species names with the federal trends dataset and identified 16 matching species which represent about 28% of the species in the federal database. We only kept species for which enough data have been collected (more than 30 data points since 1970), cutting down the list of species to 15. They are listed in Table 1.
+We then accessed the Computerized Database of Québec Seabirds [@CDQS_2020] (CDQS), which contains monitoring data from a number of seabird colonies in Quebec. We crossed reference species names with the federal trends dataset and identified 16 matching species which represent about 28% of the species in the federal database. We only kept species for which enough data have been collected (more than 30 data points since 1970), cutting down the list of species to 14. They are listed in Table 1 and Figure 2.
 
-The monitoring data from the CDQS is incomplete, as not all colonies have been surveyed every year. Although the CDQS contains data going back all the way to the 1800s, we filtered the dataset down to data collected from 1970, in order to allow the comparison with the federal trends. Not all colonies have been sampled starting in 1970, and not all colonies have been sampled all the way to 2016. In addition, not all colonies behave similarly, with some colonies doing exceptionally well in peak years. Finally, the raw abundances reported in the CDQS cannot be compared with the trends from the federal dataset which were obtained through a modelling effort [@ECC_trends_2012].
+The monitoring data from the CDQS is incomplete, as not all colonies have been surveyed every year (as can be seen in Figure 3). Although the CDQS contains data going back all the way to the 1800s, we filtered the dataset down to data collected from 1970, in order to allow the comparison with the federal trends. Not all colonies have been sampled starting in 1970, and not all colonies have been sampled all the way to 2016 (Figure 3). In addition, not all colonies behave similarly, with some colonies doing exceptionally well in peak years. Finally, the raw abundances reported in the CDQS cannot be compared with the trends from the federal dataset which were obtained through a modeling effort [@ECC_trends_2012].
 
-For these reasons, it was necessary to model the CDQS bird abundance in order to determine trends. Although it would have been ideal to replicate the methodology employed to determine the federal trends, It was not possible for us to do so due to time constraints. Instead, we used a very simple smoothing model on the mean abundance per year (`loess` function in R). We then calculated the difference in the predicted mean abundances for 1970 versus for 2016, from which we derived a percentage change. We used this value to determine the trend for Quebec seabirds (displayed in table 1). A bird was classified as stable if the percentage change was between -15% and +15%. It was classified either as decreasing if that percentage fell below -15% and increasing if it fell above 15%. It is important to note that those percentages should not be interpreted directly as accurate predictions of change, as our simple modelling approach is likely not robust enough in that regard. Instead, they are to be used only as an indicator of the direction of change. In this sense, we believe this approach is appropriate to identify trends.
+For these reasons, it was necessary to model the CDQS bird abundance in order to determine trends. Although it would have been ideal to replicate the methodology employed to determine the federal trends, It was not possible for us to do so due to time constraints. Instead, we used a very simple smoothing model on the mean abundance per year (`loess` function in R). We then calculated the difference in the predicted mean abundances for 1970 versus for 2016, from which we derived a percentage change (results of the modelling effort are shown in Figure 4). We used this value to determine the trend for Quebec seabirds (displayed in Table 1). A bird was classified as stable if the percentage change was between -15% and +15%. It was classified either as decreasing if that percentage fell below -15% and increasing if it fell above 15%. It is important to note that those percentages should not be interpreted directly as accurate predictions of change, as our simple modelling approach is likely not robust enough in that regard. Instead, they are to be used only as an indicator of the direction of change. In this sense, we believe this approach is appropriate to identify trends.
 
 All data and code is accessible through the github repository, which is setup to replicate the computing environment used to generate the results.
 
@@ -117,22 +117,25 @@ QCSB_table <- QCSB_subset_model %>%
 
 ## Results
 
-Results show that seabird populations are stable at the federal level in comparison to other bird groups between 1970 and 2016 (figure 1). Because of our simple modelling approach, which we deemed a reasonable approach to identify trends but that should not be interpreted directly as accurate predictions of change, our results yielded extremely high and low values. 8 out of 14 species of seabirds shared the same trends in Quebec as in the rest of Canada (figure 3). The Atlantic Tern and the Common Tern showed decreasing trends in Quebec. However, data was insufficient on the Canadian database to show any positive or negative comparative trends. The Atlantic Puffin results showed an increasing trend in Canada but a decreasing trend in Quebec (change of 54.50% in Quebec). The Black Guillemot also showed an increasing trend in Canada but a decreasing trend in Quebec (change of 35.94% in Quebec). The Common Murre was the only species that showed a stable trend in Canada but a decreasing trend in Quebec (68.48% change in Quebec). 
+Results show that seabird populations are stable at the federal level in comparison to other bird groups between 1970 and 2016 (Figure 1). Trends are diverse for different species of birds in Quebec (Figure 2). Because of our simple modelling approach (Figure 4), which we deemed a reasonable approach to identify trends but that should not be interpreted directly as accurate predictions of change, our results yielded extremely high and low values. In total, 8 out of 14 species of seabirds shared the same trends in Quebec as in the rest of Canada (see Table 1). The Atlantic Tern and the Common Tern showed decreasing trends in Quebec (see Table 1 and Figure 4). However, data was insufficient on the Canadian database to show any positive or negative comparative trends. The Atlantic Puffin results showed an increasing trend in Canada but a decreasing trend in Quebec (change of 54.50% in Quebec). The Black Guillemot also showed an increasing trend in Canada but a decreasing trend in Quebec (change of 35.94% in Quebec). The Common Murre was the only species that showed a stable trend in Canada but a decreasing trend in Quebec (68.48% change in Quebec). 
 
-$\vspace{1cm}$
+$\vspace{0.5cm}$
 
 ```{r Trends_fig1, warning=FALSE}
 trends_clean %>% 
   ggplot(aes(x = year, y = value)) +
   geom_line(aes(col = species_group)) +
-  labs(x = "Year (19070 - 2016)", 
+  labs(x = "Year (1970 - 2016)", 
        y = "% change since 1970", 
        col = "Taxonomic group", 
-       title = "Change in canadian birds abundance 1970 - 2016 by taxonomic group") +
-  scale_color_viridis_d()
+       caption = "Figure 1: Change in canadian birds abundance 1970 - 2016 by taxonomic group. \n This is a replication of the figure generated in te ECCC report on bird abundance trends.") +
+  scale_color_viridis_d() +
+  theme(plot.caption = element_text(hjust = 0, size = 10))
 ```
 
-```{r Trends_QC_abundance_fig2, message=FALSE, warning=FALSE}
+$\vspace{0.5cm}$
+
+```{r Trends_QC_abundance_fig2, message=FALSE, warning=FALSE, fig.width=7}
 QCSB_subset_sum %>% 
   ggplot(aes(x = annee_year, y = total, color = espece_species_en)) +
   geom_point() + geom_smooth(se = F) +
@@ -140,25 +143,35 @@ QCSB_subset_sum %>%
   scale_color_viridis_d() +
   labs(x = "Year (1970 - 2016)", 
        y = "Total abundance, all colonies (log)", 
-       col = "Species")
+       col = "Species", 
+       caption = "Figure 2: Abundance (log) over time for all species.") +
+  theme(plot.caption = element_text(hjust = 0, size = 10))
 ```
-```{r message=FALSE, warning=FALSE}
+
+$\vspace{0.5cm}$
+
+```{r message=FALSE, warning=FALSE, fig.width=7}
 QCSB_subset_pct %>% 
   mutate(numero_de_colonie_colony_number_fct = as.factor(numero_de_colonie_colony_number)) %>% 
   ggplot(aes(x = annee_year, y = change, group = numero_de_colonie_colony_number_fct)) +
   geom_line() +
-  geom_smooth(aes(x = annee_year, y = change), inherit.aes = FALSE) +
+  # geom_smooth(aes(x = annee_year, y = change), inherit.aes = FALSE) +
   facet_wrap(~espece_species_en, scales = "free") +
   #scale_color_viridis_d() +
   labs(x = "Year (1970 - 2016)", 
-       y = "% change since 1970 per colony", 
-       col = "Colony Number") + theme(legend.position = "none") 
+       y = "% Chance since first year of survey per colony", 
+       col = "Colony Number", 
+       caption = "Figure 3: Data series of % change sunce baseline year (first year of survey for that colony) \n for all colonies of each species in Quebec.") + 
+  theme(legend.position = "none",)  +
+  theme(plot.caption = element_text(hjust = 0, size = 10))
 ```
 
-```{r Meam_smoothed_color_fig3, message=FALSE, warning=FALSE}
+$\vspace{0.5cm}$
+
+```{r Meam_smoothed_color_fig3, message=FALSE, warning=FALSE, fig.width=7}
 QCSB_subset_mean_model %>% 
   # mutate(mean = log(mean)) %>% 
-  # make figure
+  # make Figure
   ggplot(aes(x = annee_year, y = mean)) +
   geom_line() +
   geom_smooth(method = "loess") +
@@ -166,18 +179,23 @@ QCSB_subset_mean_model %>%
   #scale_color_viridis_d() +
   labs(x = "Year", 
        y = "Average abundance", 
-       col = "Colony Number") + 
-  theme(legend.position = "none")
+       col = "Colony Number", 
+       caption = "Figure 4: Mean abundance for each species modeled with smoothing function (blue line).") + 
+  theme(legend.position = "none")  +
+  theme(plot.caption = element_text(hjust = 0, size = 10))
 
 ```
 
-```{r format table, message=FALSE, warning=FALSE}
+$\vspace{0.5cm}$
+
+Table 1: Trends in Seabirds populations in Canada vs in Quebec
+
+```{r format Table, message=FALSE, warning=FALSE}
 alpha_val <- 0.7
 QCSB_table %>%
   select(-matching) %>%
   arrange(espece_species_en) %>%
   gt() %>%
-  # tab_header(title = "Trends in Seabirds populations in Canada vs in Quebec") %>%
   tab_spanner(label = "Status", columns = vars(status, status_QC)) %>%
   tab_spanner(label = "% Change in QC ", columns = vars(percent_change)) %>%
   fmt_percent("percent_change", scale_values = FALSE, decimals=2) %>%
@@ -202,12 +220,17 @@ QCSB_table %>%
 
 ## Discussion
 
-Marine seabirds are valuable bioindicators. However, they face various threats due to ocean warming, habitat fragmentation and other impacts that could drive abundance changes. Knowing the abundance trends of seabirds can help to better understand how threats are affecting these birds. In Canada, the Atlantic Puffin (Fratercula arctica), the Common Murre (Uria aalge) and the Black Guillemot (Cepphus grylle) present discrepancies in their abundance trends between the province of Quebec and Canada. On a national scale, the increase in both the Atlantic puffin and the Black Guillemot population abundances trends can be explained by their habitat availability. 
+Marine seabirds are valuable bioindicators. However, they face various threats due to ocean warming, habitat fragmentation and other impacts that could drive abundance changes. Knowing the abundance trends of seabirds can help to better understand how threats are affecting these birds. In Canada, the Atlantic Puffin (Fratercula arctica), the Common Murre (Uria aalge) and the Black Guillemot (Cepphus grylle) present discrepancies in their abundance trends between the province of Quebec and Canada. 
 
-Globally, as temperatures become increasingly warmer, it can be hypothesized that the loss of sea ice may provide suitable habitats for the puffins and guillemots. This impact starting at high latitudes might contribute to the increase of abundance not seen in Quebec where new possible habitat for populations is not occurring [@wongHotspotsColdSeas2014]. In addition, the proximity of colonies is expected to be a driver of persistence and occurrence of seabird densities.
+In eastern Canada, there is currently approximately 350,000 to 40,000 breeding Atlantic puffins. Most are found in Newfoundland and Labrador. [@cornell_2020_3] (Nature Conservancy Canada). We found that for Canada, there is a trend showing an increase in puffin abundance. However, we find decreasing trends of abundance when looking at Quebec on a province-size scale.
+
+The abundance of seabirds can depend on the health and availability of their food sources. As seabirds that rely heavily on food from the ocean, Atlantic puffin abundance and population health can be impacted by the presence or absence of prey fish. In turn, the prey fish availability which is affected by the primary productivity of the waters they feed in. A study by @baillieResponseAtlanticPuffins2004 examined the impacts of the absence of capelin, a preferred food source for the Atlantic puffin, on the population's abundance. They expected this to negatively impact on reproduction and adult survivorship in the Gannet islands, Labrador. However, they found that this change did not affect the puffin's breeding and rearing of young as they found suitable alternative prey. Therefore, prey availability may not have affected the abundances of the puffins at either the Canada or Quebec scales. 
+
+On a national scale, the increase in both the Atlantic puffin and the Black Guillemot population abundances trends can be explained by their habitat availability. Globally, as temperatures become increasingly warmer, it can be hypothesized that the loss of sea ice may provide suitable habitats for the puffins and guillemots. This impact starting at high latitudes might contribute to the increase of abundance not seen in Quebec where new possible habitat for populations is not occurring [@wongHotspotsColdSeas2014]. In addition, the proximity of colonies is expected to be a driver of persistence and occurrence of seabird densities.
+
 However, a recent report linked Black Guillemot population trends to habitat loss across their Canadian range under various global warming scenarios [@Audubon_2020]. It appears that habitat loss is proportional to increasing temperature across the range, with an acute habitat loss in Quebec. Black Guillemot are difficult species to record, therefore, it is difficult to evaluate other drivers that might lead to their population fluctuations. We believe that the current national trends are different from the provincial trends due to the combination of climatic and intense geographically located anthropogenic disturbances (e.g. urbanisation; habitat fragmentation/degradation), which negatively impact these specific communities in Quebec. 
 
-The Common Murre (Uria aalge) accounts for one of the most abundant seabirds of the Northern Hemisphere. The number of Common Murres seems to have risen dramatically over the past 50 years  [noauthor_biodiversity_nodate] with a current stable population in Canada. Their population decline in Quebec could be due to legal poaching and hunting. Common Murre are also one of the species the most frequently found as a victim of by-catch in commercial net fisheries [@smith_assessment_2005] and found oiled on beach bird surveys [@hamel_bycatch_2009] along the Pacific coast. It is thought that most of these individuals come from breeding colonies in the south closer to the Quebec region. However, currently The North American Waterbird Conservation Plan estimates a population of 4,250,000 in North America, rates the species an 11 out of 20 on the Continental Concern Score, and lists it as a Species of Moderate Concern [@cornell_2020]. 
+The Common Murre (Uria aalge) accounts for one of the most abundant seabirds of the Northern Hemisphere. The number of Common Murres seems to have risen dramatically over the past 50 years  [@ecc_biodiversity_2020] with a current stable population in Canada. Their population decline in Quebec could be due to legal poaching and hunting. Common Murre are also one of the species the most frequently found as a victim of by-catch in commercial net fisheries [@smith_assessment_2005] and found oiled on beach bird surveys [@hamel_bycatch_2009] along the Pacific coast [@bc_2020]. It is thought that most of these individuals come from breeding colonies in the south closer to the Quebec region. However, currently The North American Waterbird Conservation Plan estimates a population of 4,250,000 in North America, rates the species an 11 out of 20 on the Continental Concern Score, and lists it as a Species of Moderate Concern [@cornell_2020]. 
 
 ### Limitations
 
