@@ -1,0 +1,424 @@
+year,species_group,value
+1970,Waterfowl,0
+1970,Birds of prey,0
+1970,Wetland birds,0
+1970,Seabirds,NA
+1970,Forest birds,0
+1970,All other birds,0
+1970,Shorebirds,NA
+1970,Grassland birds,0
+1970,Aerial insectivores,0
+1971,Waterfowl,1.7
+1971,Birds of prey,0.9
+1971,Wetland birds,3.1
+1971,Seabirds,NA
+1971,Forest birds,0.2
+1971,All other birds,0
+1971,Shorebirds,NA
+1971,Grassland birds,-0.7
+1971,Aerial insectivores,-3.3
+1972,Waterfowl,3
+1972,Birds of prey,1.9
+1972,Wetland birds,6.2
+1972,Seabirds,NA
+1972,Forest birds,0.1
+1972,All other birds,0
+1972,Shorebirds,NA
+1972,Grassland birds,-1.2
+1972,Aerial insectivores,-5.6
+1973,Waterfowl,3.9
+1973,Birds of prey,3.5
+1973,Wetland birds,8.7
+1973,Seabirds,NA
+1973,Forest birds,0.1
+1973,All other birds,-0.1
+1973,Shorebirds,NA
+1973,Grassland birds,-2.6
+1973,Aerial insectivores,-7.6
+1974,Waterfowl,4.8
+1974,Birds of prey,4.9
+1974,Wetland birds,10.3
+1974,Seabirds,NA
+1974,Forest birds,0.6
+1974,All other birds,-0.8
+1974,Shorebirds,0
+1974,Grassland birds,-4.9
+1974,Aerial insectivores,-9
+1975,Waterfowl,6.3
+1975,Birds of prey,7.2
+1975,Wetland birds,10.9
+1975,Seabirds,NA
+1975,Forest birds,1.5
+1975,All other birds,-2.2
+1975,Shorebirds,0.2
+1975,Grassland birds,-8.1
+1975,Aerial insectivores,-9.9
+1976,Waterfowl,8.5
+1976,Birds of prey,9.5
+1976,Wetland birds,10.5
+1976,Seabirds,NA
+1976,Forest birds,2.8
+1976,All other birds,-4
+1976,Shorebirds,-0.2
+1976,Grassland birds,-11.3
+1976,Aerial insectivores,-10.4
+1977,Waterfowl,10.9
+1977,Birds of prey,12.2
+1977,Wetland birds,9.3
+1977,Seabirds,NA
+1977,Forest birds,4.1
+1977,All other birds,-5.5
+1977,Shorebirds,-1
+1977,Grassland birds,-13.7
+1977,Aerial insectivores,-11.1
+1978,Waterfowl,13.3
+1978,Birds of prey,14.8
+1978,Wetland birds,8.3
+1978,Seabirds,NA
+1978,Forest birds,5.6
+1978,All other birds,-6.2
+1978,Shorebirds,-2.4
+1978,Grassland birds,-15.4
+1978,Aerial insectivores,-11.5
+1979,Waterfowl,15.3
+1979,Birds of prey,17.3
+1979,Wetland birds,8.2
+1979,Seabirds,NA
+1979,Forest birds,7.1
+1979,All other birds,-6.2
+1979,Shorebirds,-4.2
+1979,Grassland birds,-16.6
+1979,Aerial insectivores,-11.8
+1980,Waterfowl,16.8
+1980,Birds of prey,19.8
+1980,Wetland birds,8.4
+1980,Seabirds,NA
+1980,Forest birds,8.7
+1980,All other birds,-5.8
+1980,Shorebirds,-5.9
+1980,Grassland birds,-17.2
+1980,Aerial insectivores,-12.6
+1981,Waterfowl,17.9
+1981,Birds of prey,23
+1981,Wetland birds,9.1
+1981,Seabirds,NA
+1981,Forest birds,10
+1981,All other birds,-5.1
+1981,Shorebirds,-7
+1981,Grassland birds,-18.1
+1981,Aerial insectivores,-13.3
+1982,Waterfowl,18.4
+1982,Birds of prey,25.6
+1982,Wetland birds,9.8
+1982,Seabirds,NA
+1982,Forest birds,11
+1982,All other birds,-4.8
+1982,Shorebirds,-7.7
+1982,Grassland birds,-19.4
+1982,Aerial insectivores,-13.9
+1983,Waterfowl,19
+1983,Birds of prey,28.5
+1983,Wetland birds,10.1
+1983,Seabirds,NA
+1983,Forest birds,11.5
+1983,All other birds,-4.7
+1983,Shorebirds,-8.4
+1983,Grassland birds,-21.2
+1983,Aerial insectivores,-14.2
+1984,Waterfowl,19.5
+1984,Birds of prey,31
+1984,Wetland birds,10.3
+1984,Seabirds,0
+1984,Forest birds,11.6
+1984,All other birds,-4.5
+1984,Shorebirds,-9.2
+1984,Grassland birds,-23.2
+1984,Aerial insectivores,-14.8
+1985,Waterfowl,20
+1985,Birds of prey,34.2
+1985,Wetland birds,10.2
+1985,Seabirds,0.8
+1985,Forest birds,11.8
+1985,All other birds,-4.4
+1985,Shorebirds,-9.9
+1985,Grassland birds,-24.7
+1985,Aerial insectivores,-15.5
+1986,Waterfowl,20.8
+1986,Birds of prey,37.7
+1986,Wetland birds,9.3
+1986,Seabirds,1.6
+1986,Forest birds,11.7
+1986,All other birds,-3.8
+1986,Shorebirds,-10.9
+1986,Grassland birds,-25.8
+1986,Aerial insectivores,-16.7
+1987,Waterfowl,21.3
+1987,Birds of prey,42.1
+1987,Wetland birds,8.5
+1987,Seabirds,2.8
+1987,Forest birds,11.9
+1987,All other birds,-3.1
+1987,Shorebirds,-12.1
+1987,Grassland birds,-26
+1987,Aerial insectivores,-18.2
+1988,Waterfowl,22.1
+1988,Birds of prey,46.3
+1988,Wetland birds,7.8
+1988,Seabirds,4.1
+1988,Forest birds,12.3
+1988,All other birds,-2.3
+1988,Shorebirds,-13.5
+1988,Grassland birds,-26.2
+1988,Aerial insectivores,-20
+1989,Waterfowl,24.1
+1989,Birds of prey,50.7
+1989,Wetland birds,7.3
+1989,Seabirds,5.5
+1989,Forest birds,12.6
+1989,All other birds,-1.8
+1989,Shorebirds,-15
+1989,Grassland birds,-26.1
+1989,Aerial insectivores,-22.1
+1990,Waterfowl,28.1
+1990,Birds of prey,55.8
+1990,Wetland birds,8.2
+1990,Seabirds,6.4
+1990,Forest birds,13.2
+1990,All other birds,-1.2
+1990,Shorebirds,-16.5
+1990,Grassland birds,-26.5
+1990,Aerial insectivores,-24.5
+1991,Waterfowl,32.6
+1991,Birds of prey,59.3
+1991,Wetland birds,10.2
+1991,Seabirds,7.1
+1991,Forest birds,13.7
+1991,All other birds,-0.7
+1991,Shorebirds,-18.4
+1991,Grassland birds,-28.4
+1991,Aerial insectivores,-27
+1992,Waterfowl,39
+1992,Birds of prey,62.5
+1992,Wetland birds,12.8
+1992,Seabirds,7.6
+1992,Forest birds,14.1
+1992,All other birds,-0.3
+1992,Shorebirds,-20.1
+1992,Grassland birds,-30.5
+1992,Aerial insectivores,-29.6
+1993,Waterfowl,46.4
+1993,Birds of prey,64.4
+1993,Wetland birds,15.5
+1993,Seabirds,7.6
+1993,Forest birds,14.5
+1993,All other birds,-0.1
+1993,Shorebirds,-21.9
+1993,Grassland birds,-32.8
+1993,Aerial insectivores,-31.9
+1994,Waterfowl,55.9
+1994,Birds of prey,66.7
+1994,Wetland birds,18.1
+1994,Seabirds,7.5
+1994,Forest birds,14.4
+1994,All other birds,-0.2
+1994,Shorebirds,-23.3
+1994,Grassland birds,-35.4
+1994,Aerial insectivores,-34.2
+1995,Waterfowl,65.8
+1995,Birds of prey,68.8
+1995,Wetland birds,20.6
+1995,Seabirds,7.3
+1995,Forest birds,14
+1995,All other birds,-0.3
+1995,Shorebirds,-24.4
+1995,Grassland birds,-38.1
+1995,Aerial insectivores,-36.7
+1996,Waterfowl,75.4
+1996,Birds of prey,70.6
+1996,Wetland birds,22.3
+1996,Seabirds,6.9
+1996,Forest birds,13.5
+1996,All other birds,-0.9
+1996,Shorebirds,-25.3
+1996,Grassland birds,-40.5
+1996,Aerial insectivores,-38.9
+1997,Waterfowl,84.1
+1997,Birds of prey,70.6
+1997,Wetland birds,22.1
+1997,Seabirds,6.9
+1997,Forest birds,12.3
+1997,All other birds,-1.6
+1997,Shorebirds,-25.8
+1997,Grassland birds,-42.9
+1997,Aerial insectivores,-41.1
+1998,Waterfowl,90.2
+1998,Birds of prey,73.7
+1998,Wetland birds,20.5
+1998,Seabirds,6.5
+1998,Forest birds,11.4
+1998,All other birds,-2
+1998,Shorebirds,-26.3
+1998,Grassland birds,-45.3
+1998,Aerial insectivores,-43.5
+1999,Waterfowl,94.8
+1999,Birds of prey,75.4
+1999,Wetland birds,18.3
+1999,Seabirds,6.6
+1999,Forest birds,10.4
+1999,All other birds,-2.2
+1999,Shorebirds,-26.7
+1999,Grassland birds,-47.7
+1999,Aerial insectivores,-45.7
+2000,Waterfowl,98.3
+2000,Birds of prey,76.8
+2000,Wetland birds,15.9
+2000,Seabirds,7
+2000,Forest birds,9.8
+2000,All other birds,-2.5
+2000,Shorebirds,-26.9
+2000,Grassland birds,-49.4
+2000,Aerial insectivores,-47.9
+2001,Waterfowl,100
+2001,Birds of prey,79.9
+2001,Wetland birds,13.7
+2001,Seabirds,7.1
+2001,Forest birds,9.4
+2001,All other birds,-2.3
+2001,Shorebirds,-27.3
+2001,Grassland birds,-51
+2001,Aerial insectivores,-49.7
+2002,Waterfowl,100.7
+2002,Birds of prey,83
+2002,Wetland birds,12.7
+2002,Seabirds,7.3
+2002,Forest birds,9.2
+2002,All other birds,-2.3
+2002,Shorebirds,-27.6
+2002,Grassland birds,-51.2
+2002,Aerial insectivores,-51.5
+2003,Waterfowl,102.3
+2003,Birds of prey,86.7
+2003,Wetland birds,12.4
+2003,Seabirds,7.8
+2003,Forest birds,9.3
+2003,All other birds,-1.9
+2003,Shorebirds,-28.1
+2003,Grassland birds,-50.9
+2003,Aerial insectivores,-52.7
+2004,Waterfowl,105.1
+2004,Birds of prey,89.3
+2004,Wetland birds,13.2
+2004,Seabirds,8.1
+2004,Forest birds,9.5
+2004,All other birds,-1.4
+2004,Shorebirds,-28.4
+2004,Grassland birds,-50.4
+2004,Aerial insectivores,-54.1
+2005,Waterfowl,108.6
+2005,Birds of prey,92.3
+2005,Wetland birds,13.7
+2005,Seabirds,8.7
+2005,Forest birds,9.6
+2005,All other birds,-0.9
+2005,Shorebirds,-28.8
+2005,Grassland birds,-49.8
+2005,Aerial insectivores,-55.3
+2006,Waterfowl,113.9
+2006,Birds of prey,94.2
+2006,Wetland birds,14.5
+2006,Seabirds,9.6
+2006,Forest birds,9.2
+2006,All other birds,-0.5
+2006,Shorebirds,-29.1
+2006,Grassland birds,-50.1
+2006,Aerial insectivores,-56.4
+2007,Waterfowl,119.8
+2007,Birds of prey,96.1
+2007,Wetland birds,15.8
+2007,Seabirds,10.8
+2007,Forest birds,8.8
+2007,All other birds,0.1
+2007,Shorebirds,-29.8
+2007,Grassland birds,-51.1
+2007,Aerial insectivores,-57.4
+2008,Waterfowl,125.2
+2008,Birds of prey,97.6
+2008,Wetland birds,16.9
+2008,Seabirds,12.2
+2008,Forest birds,8.1
+2008,All other birds,0.5
+2008,Shorebirds,-30.2
+2008,Grassland birds,-52.3
+2008,Aerial insectivores,-58.6
+2009,Waterfowl,131.2
+2009,Birds of prey,99.1
+2009,Wetland birds,18
+2009,Seabirds,13.9
+2009,Forest birds,7.7
+2009,All other birds,0.8
+2009,Shorebirds,-30.8
+2009,Grassland birds,-53.6
+2009,Aerial insectivores,-59.1
+2010,Waterfowl,136.5
+2010,Birds of prey,99.9
+2010,Wetland birds,19
+2010,Seabirds,15
+2010,Forest birds,7.1
+2010,All other birds,0.6
+2010,Shorebirds,-31.6
+2010,Grassland birds,-54.8
+2010,Aerial insectivores,-59.8
+2011,Waterfowl,140.8
+2011,Birds of prey,102.6
+2011,Wetland birds,20.3
+2011,Seabirds,16.4
+2011,Forest birds,6.8
+2011,All other birds,0.7
+2011,Shorebirds,-32.9
+2011,Grassland birds,-55.5
+2011,Aerial insectivores,-60.3
+2012,Waterfowl,144.2
+2012,Birds of prey,103
+2012,Wetland birds,21.8
+2012,Seabirds,17.4
+2012,Forest birds,6.6
+2012,All other birds,0
+2012,Shorebirds,-34.1
+2012,Grassland birds,-56.1
+2012,Aerial insectivores,-60.2
+2013,Waterfowl,148.1
+2013,Birds of prey,104.7
+2013,Wetland birds,23.2
+2013,Seabirds,17.6
+2013,Forest birds,6.5
+2013,All other birds,-0.7
+2013,Shorebirds,-35.4
+2013,Grassland birds,-56.4
+2013,Aerial insectivores,-60.4
+2014,Waterfowl,149.7
+2014,Birds of prey,105
+2014,Wetland birds,25
+2014,Seabirds,17
+2014,Forest birds,6.5
+2014,All other birds,-1.6
+2014,Shorebirds,-37.1
+2014,Grassland birds,-56.8
+2014,Aerial insectivores,-60.3
+2015,Waterfowl,151
+2015,Birds of prey,108.4
+2015,Wetland birds,27.1
+2015,Seabirds,16.1
+2015,Forest birds,6.9
+2015,All other birds,-2.4
+2015,Shorebirds,-38.8
+2015,Grassland birds,-57
+2015,Aerial insectivores,-59.9
+2016,Waterfowl,151.2
+2016,Birds of prey,113.6
+2016,Wetland birds,29.5
+2016,Seabirds,14.5
+2016,Forest birds,7.2
+2016,All other birds,-3.4
+2016,Shorebirds,-40.4
+2016,Grassland birds,-57.3
+2016,Aerial insectivores,-58.8

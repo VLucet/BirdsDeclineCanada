@@ -1,0 +1,480 @@
+species_group,status,species,species_count
+Waterfowl,Increasing,Blue-winged Teal,19
+Waterfowl,Increasing,Bufflehead,19
+Waterfowl,Increasing,Cackling Goose,19
+Waterfowl,Increasing,Canada Goose,19
+Waterfowl,Increasing,Canvasback,19
+Waterfowl,Increasing,Common Goldeneye,19
+Waterfowl,Increasing,Common Merganser,19
+Waterfowl,Increasing,Gadwall,19
+Waterfowl,Increasing,Greater White-fronted Goose,19
+Waterfowl,Increasing,Green-winged Teal,19
+Waterfowl,Increasing,Hooded Merganser,19
+Waterfowl,Increasing,Northern Shoveler,19
+Waterfowl,Increasing,Redhead,19
+Waterfowl,Increasing,Ring-necked Duck,19
+Waterfowl,Increasing,Ross's Goose,19
+Waterfowl,Increasing,Ruddy Duck,19
+Waterfowl,Increasing,Snow Goose,19
+Waterfowl,Increasing,Trumpeter Swan,19
+Waterfowl,Increasing,Wood Duck,19
+Waterfowl,Stable,American Black Duck,5
+Waterfowl,Stable,American Wigeon,5
+Waterfowl,Stable,Lesser Scaup,5
+Waterfowl,Stable,Mallard,5
+Waterfowl,Stable,Tundra Swan,5
+Waterfowl,Decreasing,Brant,2
+Waterfowl,Decreasing,Northern Pintail,2
+Waterfowl,Data deficient,Barrow's Goldeneye,12
+Waterfowl,Data deficient,Black Scoter,12
+Waterfowl,Data deficient,Cinnamon Teal,12
+Waterfowl,Data deficient,Common Eider,12
+Waterfowl,Data deficient,Eurasian Wigeon,12
+Waterfowl,Data deficient,Greater Scaup,12
+Waterfowl,Data deficient,Harlequin Duck,12
+Waterfowl,Data deficient,King Eider,12
+Waterfowl,Data deficient,Long-tailed Duck,12
+Waterfowl,Data deficient,Red-breasted Merganser,12
+Waterfowl,Data deficient,Surf Scoter,12
+Waterfowl,Data deficient,White-winged Scoter,12
+Birds of prey,Increasing,Bald Eagle,12
+Birds of prey,Increasing,Broad-winged Hawk,12
+Birds of prey,Increasing,Cooper's Hawk,12
+Birds of prey,Increasing,Ferruginous Hawk,12
+Birds of prey,Increasing,Merlin,12
+Birds of prey,Increasing,Osprey,12
+Birds of prey,Increasing,Peregrine Falcon,12
+Birds of prey,Increasing,Prairie Falcon,12
+Birds of prey,Increasing,Red-shouldered Hawk,12
+Birds of prey,Increasing,Red-tailed Hawk,12
+Birds of prey,Increasing,Swainson's Hawk,12
+Birds of prey,Increasing,Turkey Vulture,12
+Birds of prey,Stable,Golden Eagle,3
+Birds of prey,Stable,Northern Goshawk,3
+Birds of prey,Stable,Rough-legged Hawk,3
+Birds of prey,Decreasing,American Kestrel,2
+Birds of prey,Decreasing,Northern Harrier[A],2
+Birds of prey,Data deficient,Gyrfalcon,3
+Birds of prey,Data deficient,Mississippi Kite,3
+Birds of prey,Data deficient,Sharp-shinned Hawk,3
+Wetland birds,Increasing,American Coot,19
+Wetland birds,Increasing,American White Pelican,19
+Wetland birds,Increasing,Bonaparte's Gull,19
+Wetland birds,Increasing,California Gull,19
+Wetland birds,Increasing,Caspian Tern,19
+Wetland birds,Increasing,Common Loon,19
+Wetland birds,Increasing,Iceland Gull,19
+Wetland birds,Increasing,Marsh Wren,19
+Wetland birds,Increasing,Nelson's Sparrow,19
+Wetland birds,Increasing,Pacific Loon,19
+Wetland birds,Increasing,Pied-billed Grebe,19
+Wetland birds,Increasing,Red-necked Grebe,19
+Wetland birds,Increasing,Red-throated Loon,19
+Wetland birds,Increasing,Ring-billed Gull,19
+Wetland birds,Increasing,Sandhill Crane,19
+Wetland birds,Increasing,Virginia Rail,19
+Wetland birds,Increasing,Western Grebe,19
+Wetland birds,Increasing,Whooping Crane,19
+Wetland birds,Increasing,Yellow-headed Blackbird,19
+Wetland birds,Stable,American Dipper,11
+Wetland birds,Stable,Black-crowned Night-Heron,11
+Wetland birds,Stable,Common Yellowthroat,11
+Wetland birds,Stable,Eared Grebe,11
+Wetland birds,Stable,Great Blue Heron,11
+Wetland birds,Stable,Horned Grebe,11
+Wetland birds,Stable,Least Bittern,11
+Wetland birds,Stable,Red-winged Blackbird,11
+Wetland birds,Stable,Sedge Wren,11
+Wetland birds,Stable,Sora,11
+Wetland birds,Stable,Swamp Sparrow,11
+Wetland birds,Decreasing,American Bittern,8
+Wetland birds,Decreasing,Belted Kingfisher,8
+Wetland birds,Decreasing,Black Tern,8
+Wetland birds,Decreasing,Common Gallinule,8
+Wetland birds,Decreasing,Franklin's Gull,8
+Wetland birds,Decreasing,Green Heron,8
+Wetland birds,Decreasing,Mew Gull,8
+Wetland birds,Decreasing,Yellow-billed Loon,8
+Wetland birds,Data deficient,Arctic Tern,17
+Wetland birds,Data deficient,Brown Pelican,17
+Wetland birds,Data deficient,Cattle Egret,17
+Wetland birds,Data deficient,Clark's Grebe,17
+Wetland birds,Data deficient,Common Tern,17
+Wetland birds,Data deficient,Forster's Tern,17
+Wetland birds,Data deficient,Glossy Ibis,17
+Wetland birds,Data deficient,King Rail,17
+Wetland birds,Data deficient,Little Blue Heron,17
+Wetland birds,Data deficient,Little Gull,17
+Wetland birds,Data deficient,Long-tailed Jaeger,17
+Wetland birds,Data deficient,Parasitic Jaeger,17
+Wetland birds,Data deficient,Pomarine Jaeger,17
+Wetland birds,Data deficient,Sabine's Gull,17
+Wetland birds,Data deficient,Snowy Egret,17
+Wetland birds,Data deficient,White-faced Ibis,17
+Wetland birds,Data deficient,Yellow Rail,17
+Seabirds,Increasing,Ancient Murrelet,7
+Seabirds,Increasing,Atlantic Puffin,7
+Seabirds,Increasing,Black Guillemot,7
+Seabirds,Increasing,Double-crested Cormorant,7
+Seabirds,Increasing,Iceland Gull,7
+Seabirds,Increasing,Northern Gannet,7
+Seabirds,Increasing,Razorbill,7
+Seabirds,Stable,Cassin's Auklet,10
+Seabirds,Stable,Common Murre,10
+Seabirds,Stable,Glaucous-winged Gull,10
+Seabirds,Stable,Great Cormorant,10
+Seabirds,Stable,Northern Fulmar,10
+Seabirds,Stable,Pelagic Cormorant,10
+Seabirds,Stable,Pigeon Guillemot,10
+Seabirds,Stable,Rhinoceros Auklet,10
+Seabirds,Stable,Thick-billed Murre,10
+Seabirds,Stable,Tufted Puffin,10
+Seabirds,Decreasing,Black-legged Kittiwake,5
+Seabirds,Decreasing,Great Black-backed Gull,5
+Seabirds,Decreasing,Herring Gull,5
+Seabirds,Decreasing,Leach's Storm-Petrel,5
+Seabirds,Decreasing,Roseate Tern,5
+Seabirds,Data deficient,Arctic Tern,36
+Seabirds,Data deficient,Black-footed Albatross,36
+Seabirds,Data deficient,Black-headed Gull,36
+Seabirds,Data deficient,Brandt's Cormorant,36
+Seabirds,Data deficient,Buller's Shearwater,36
+Seabirds,Data deficient,Common Tern,36
+Seabirds,Data deficient,Cory's Shearwater,36
+Seabirds,Data deficient,Dovekie,36
+Seabirds,Data deficient,Flesh-footed Shearwater,36
+Seabirds,Data deficient,Fork-tailed Storm-Petrel,36
+Seabirds,Data deficient,Glaucous Gull,36
+Seabirds,Data deficient,Great Shearwater,36
+Seabirds,Data deficient,Great Skua,36
+Seabirds,Data deficient,Heermann's Gull,36
+Seabirds,Data deficient,Horned Puffin,36
+Seabirds,Data deficient,Ivory Gull,36
+Seabirds,Data deficient,Laughing Gull,36
+Seabirds,Data deficient,Laysan Albatross,36
+Seabirds,Data deficient,Lesser Black-backed Gull,36
+Seabirds,Data deficient,Long-tailed Jaeger,36
+Seabirds,Data deficient,Manx Shearwater,36
+Seabirds,Data deficient,Mottled Petrel,36
+Seabirds,Data deficient,Murphy's Petrel,36
+Seabirds,Data deficient,Parakeet Auklet,36
+Seabirds,Data deficient,Parasitic Jaeger,36
+Seabirds,Data deficient,Pink-footed Shearwater,36
+Seabirds,Data deficient,Pomarine Jaeger,36
+Seabirds,Data deficient,Ross's Gull,36
+Seabirds,Data deficient,Sabine's Gull,36
+Seabirds,Data deficient,Scripps's Murrelet,36
+Seabirds,Data deficient,Short-tailed Albatross,36
+Seabirds,Data deficient,Short-tailed Shearwater,36
+Seabirds,Data deficient,Sooty Shearwater,36
+Seabirds,Data deficient,South Polar Skua,36
+Seabirds,Data deficient,Western Gull,36
+Seabirds,Data deficient,Wilson's Storm-Petrel,36
+Forest birds,Increasing,American Three-toed Woodpecker,49
+Forest birds,Increasing,Barred Owl,49
+Forest birds,Increasing,Bay-breasted Warbler,49
+Forest birds,Increasing,Black-backed Woodpecker,49
+Forest birds,Increasing,Blackburnian Warbler,49
+Forest birds,Increasing,Black-capped Chickadee,49
+Forest birds,Increasing,Black-headed Grosbeak,49
+Forest birds,Increasing,Black-throated Blue Warbler,49
+Forest birds,Increasing,Blue-headed Vireo,49
+Forest birds,Increasing,Brown Creeper,49
+Forest birds,Increasing,Calliope Hummingbird,49
+Forest birds,Increasing,Cape May Warbler,49
+Forest birds,Increasing,Clark's Nutcracker,49
+Forest birds,Increasing,Dusky Flycatcher,49
+Forest birds,Increasing,Fox Sparrow,49
+Forest birds,Increasing,Golden-crowned Kinglet,49
+Forest birds,Increasing,Golden-winged Warbler,49
+Forest birds,Increasing,Great Gray Owl,49
+Forest birds,Increasing,Hairy Woodpecker,49
+Forest birds,Increasing,Hammond's Flycatcher,49
+Forest birds,Increasing,Hutton's Vireo,49
+Forest birds,Increasing,Magnolia Warbler,49
+Forest birds,Increasing,Mountain Chickadee,49
+Forest birds,Increasing,Northern Cardinal,49
+Forest birds,Increasing,Northern Parula,49
+Forest birds,Increasing,Northern Pygmy-Owl,49
+Forest birds,Increasing,Northern Saw-whet Owl,49
+Forest birds,Increasing,Northern Waterthrush,49
+Forest birds,Increasing,Orange-crowned Warbler,49
+Forest birds,Increasing,Pacific-slope Flycatcher,49
+Forest birds,Increasing,Palm Warbler,49
+Forest birds,Increasing,Philadelphia Vireo,49
+Forest birds,Increasing,Pileated Woodpecker,49
+Forest birds,Increasing,Pine Warbler,49
+Forest birds,Increasing,Red Crossbill,49
+Forest birds,Increasing,Red-breasted Nuthatch,49
+Forest birds,Increasing,Red-breasted Sapsucker,49
+Forest birds,Increasing,Red-eyed Vireo,49
+Forest birds,Increasing,Red-naped Sapsucker,49
+Forest birds,Increasing,Ruby-throated Hummingbird,49
+Forest birds,Increasing,Spruce Grouse,49
+Forest birds,Increasing,Steller's Jay,49
+Forest birds,Increasing,Warbling Vireo,49
+Forest birds,Increasing,Western Bluebird,49
+Forest birds,Increasing,Western Tanager,49
+Forest birds,Increasing,White-breasted Nuthatch,49
+Forest birds,Increasing,Yellow-bellied Flycatcher,49
+Forest birds,Increasing,Yellow-rumped Warbler,49
+Forest birds,Increasing,Yellow-throated Vireo,49
+Forest birds,Stable,Alder Flycatcher,30
+Forest birds,Stable,American Redstart,30
+Forest birds,Stable,Black-and-white Warbler,30
+Forest birds,Stable,Black-throated Gray Warbler,30
+Forest birds,Stable,Black-throated Green Warbler,30
+Forest birds,Stable,Boreal Chickadee,30
+Forest birds,Stable,Cassin's Vireo,30
+Forest birds,Stable,Dark-eyed Junco,30
+Forest birds,Stable,Downy Woodpecker,30
+Forest birds,Stable,Dusky Grouse,30
+Forest birds,Stable,Great Horned Owl,30
+Forest birds,Stable,Greater Yellowlegs,30
+Forest birds,Stable,Hermit Thrush,30
+Forest birds,Stable,MacGillivray's Warbler,30
+Forest birds,Stable,Nashville Warbler,30
+Forest birds,Stable,Ovenbird,30
+Forest birds,Stable,Pacific Wren,30
+Forest birds,Stable,Pygmy Nuthatch,30
+Forest birds,Stable,Rose-breasted Grosbeak,30
+Forest birds,Stable,Ruffed Grouse,30
+Forest birds,Stable,Solitary Sandpiper,30
+Forest birds,Stable,Swainson's Thrush,30
+Forest birds,Stable,Townsend's Solitaire,30
+Forest birds,Stable,Townsend's Warbler,30
+Forest birds,Stable,Varied Thrush,30
+Forest birds,Stable,Veery,30
+Forest birds,Stable,Wilson's Warbler,30
+Forest birds,Stable,Winter Wren,30
+Forest birds,Stable,Yellow-bellied Sapsucker,30
+Forest birds,Stable,Yellow-billed Cuckoo,30
+Forest birds,Decreasing,American Goldfinch,44
+Forest birds,Decreasing,Band-tailed Pigeon,44
+Forest birds,Decreasing,Bewick's Wren,44
+Forest birds,Decreasing,Bicknell's Thrush,44
+Forest birds,Decreasing,Black-billed Cuckoo,44
+Forest birds,Decreasing,Blackpoll Warbler,44
+Forest birds,Decreasing,Bohemian Waxwing,44
+Forest birds,Decreasing,Canada Jay,44
+Forest birds,Decreasing,Canada Warbler,44
+Forest birds,Decreasing,Cassin's Finch,44
+Forest birds,Decreasing,Cerulean Warbler,44
+Forest birds,Decreasing,Chestnut-backed Chickadee,44
+Forest birds,Decreasing,Chestnut-sided Warbler,44
+Forest birds,Decreasing,Connecticut Warbler,44
+Forest birds,Decreasing,Eastern Kingbird,44
+Forest birds,Decreasing,Eastern Whip-poor-will,44
+Forest birds,Decreasing,Eastern Wood-Pewee,44
+Forest birds,Decreasing,Evening Grosbeak,44
+Forest birds,Decreasing,Gray-cheeked Thrush,44
+Forest birds,Decreasing,Great Crested Flycatcher,44
+Forest birds,Decreasing,Least Flycatcher,44
+Forest birds,Decreasing,Lesser Yellowlegs,44
+Forest birds,Decreasing,Lewis's Woodpecker,44
+Forest birds,Decreasing,Long-eared Owl,44
+Forest birds,Decreasing,Mourning Warbler,44
+Forest birds,Decreasing,Northern Flicker,44
+Forest birds,Decreasing,Northern Hawk Owl,44
+Forest birds,Decreasing,Olive-sided Flycatcher,44
+Forest birds,Decreasing,Pine Grosbeak,44
+Forest birds,Decreasing,Pine Siskin,44
+Forest birds,Decreasing,Purple Finch,44
+Forest birds,Decreasing,Red-headed Woodpecker,44
+Forest birds,Decreasing,Ruby-crowned Kinglet,44
+Forest birds,Decreasing,Rufous Hummingbird,44
+Forest birds,Decreasing,Rusty Blackbird,44
+Forest birds,Decreasing,Scarlet Tanager,44
+Forest birds,Decreasing,Sooty Grouse,44
+Forest birds,Decreasing,Tennessee Warbler,44
+Forest birds,Decreasing,Vaux's Swift,44
+Forest birds,Decreasing,Western Wood-Pewee,44
+Forest birds,Decreasing,White-throated Sparrow,44
+Forest birds,Decreasing,White-winged Crossbill,44
+Forest birds,Decreasing,Willow Flycatcher,44
+Forest birds,Decreasing,Wood Thrush,44
+Forest birds,Data deficient,Acadian Flycatcher,14
+Forest birds,Data deficient,Boreal Owl,14
+Forest birds,Data deficient,Cordilleran Flycatcher,14
+Forest birds,Data deficient,Eastern Screech-Owl,14
+Forest birds,Data deficient,Flammulated Owl,14
+Forest birds,Data deficient,Hooded Warbler,14
+Forest birds,Data deficient,Louisiana Waterthrush,14
+Forest birds,Data deficient,Marbled Murrelet,14
+Forest birds,Data deficient,Prothonotary Warbler,14
+Forest birds,Data deficient,Spotted Owl,14
+Forest birds,Data deficient,Tufted Titmouse,14
+Forest birds,Data deficient,Western Screech-Owl,14
+Forest birds,Data deficient,White-headed Woodpecker,14
+Forest birds,Data deficient,Williamson's Sapsucker,14
+All other birds,Increasing,Black-chinned Hummingbird,19
+All other birds,Increasing,Blue Jay,19
+All other birds,Increasing,Bullock's Oriole,19
+All other birds,Increasing,Common Raven,19
+All other birds,Increasing,Eastern Bluebird,19
+All other birds,Increasing,Golden-crowned Sparrow,19
+All other birds,Increasing,Gray-crowned Rosy-Finch,19
+All other birds,Increasing,Hoary Redpoll,19
+All other birds,Increasing,House Finch,19
+All other birds,Increasing,Indigo Bunting,19
+All other birds,Increasing,Lark Sparrow,19
+All other birds,Increasing,Lazuli Bunting,19
+All other birds,Increasing,Lincoln's Sparrow,19
+All other birds,Increasing,Mourning Dove,19
+All other birds,Increasing,Northwestern Crow,19
+All other birds,Increasing,Orchard Oriole,19
+All other birds,Increasing,Say's Phoebe,19
+All other birds,Increasing,Smith's Longspur,19
+All other birds,Increasing,Spotted Towhee,19
+All other birds,Stable,American Crow,14
+All other birds,Stable,American Robin,14
+All other birds,Stable,Brewer's Sparrow,14
+All other birds,Stable,Canyon Wren,14
+All other birds,Stable,Cedar Waxwing,14
+All other birds,Stable,Gray Catbird,14
+All other birds,Stable,House Wren,14
+All other birds,Stable,Mountain Bluebird,14
+All other birds,Stable,Northern Mockingbird,14
+All other birds,Stable,Northern Shrike,14
+All other birds,Stable,Rock Wren,14
+All other birds,Stable,Snowy Owl,14
+All other birds,Stable,Yellow Warbler,14
+All other birds,Stable,Yellow-breasted Chat,14
+All other birds,Decreasing,American Pipit,21
+All other birds,Decreasing,American Tree Sparrow,21
+All other birds,Decreasing,Baltimore Oriole,21
+All other birds,Decreasing,Black-billed Magpie,21
+All other birds,Decreasing,Brewer's Blackbird,21
+All other birds,Decreasing,Brown Thrasher,21
+All other birds,Decreasing,Brown-headed Cowbird,21
+All other birds,Decreasing,Chipping Sparrow,21
+All other birds,Decreasing,Clay-colored Sparrow,21
+All other birds,Decreasing,Common Grackle,21
+All other birds,Decreasing,Common Redpoll,21
+All other birds,Decreasing,Eastern Phoebe,21
+All other birds,Decreasing,Eastern Towhee,21
+All other birds,Decreasing,Field Sparrow,21
+All other birds,Decreasing,Harris's Sparrow,21
+All other birds,Decreasing,Lapland Longspur,21
+All other birds,Decreasing,Snow Bunting,21
+All other birds,Decreasing,Song Sparrow,21
+All other birds,Decreasing,White-crowned Sparrow,21
+All other birds,Decreasing,White-tailed Ptarmigan,21
+All other birds,Decreasing,Willow Ptarmigan,21
+All other birds,Data deficient,Bluethroat,12
+All other birds,Data deficient,California Scrub-Jay,12
+All other birds,Data deficient,Eastern Yellow Wagtail,12
+All other birds,Data deficient,Gray Flycatcher,12
+All other birds,Data deficient,Gray-headed Chickadee,12
+All other birds,Data deficient,Kirtland's Warbler,12
+All other birds,Data deficient,Northern Wheatear,12
+All other birds,Data deficient,Prairie Warbler,12
+All other birds,Data deficient,Rock Ptarmigan,12
+All other birds,Data deficient,Sage Thrasher,12
+All other birds,Data deficient,White-eyed Vireo,12
+All other birds,Data deficient,Worm-eating Warbler,12
+Shorebirds,Increasing,American Avocet,7
+Shorebirds,Increasing,Baird's Sandpiper,7
+Shorebirds,Increasing,Black Oystercatcher,7
+Shorebirds,Increasing,Rock Sandpiper,7
+Shorebirds,Increasing,Upland Sandpiper,7
+Shorebirds,Increasing,White-rumped Sandpiper,7
+Shorebirds,Increasing,Wilson's Phalarope,7
+Shorebirds,Stable,Greater Yellowlegs,6
+Shorebirds,Stable,Least Sandpiper,6
+Shorebirds,Stable,Semipalmated Plover,6
+Shorebirds,Stable,Solitary Sandpiper,6
+Shorebirds,Stable,Surfbird,6
+Shorebirds,Stable,Wilson's Snipe,6
+Shorebirds,Decreasing,American Golden-Plover,25
+Shorebirds,Decreasing,American Woodcock,25
+Shorebirds,Decreasing,Black Turnstone,25
+Shorebirds,Decreasing,Black-bellied Plover,25
+Shorebirds,Decreasing,Dunlin,25
+Shorebirds,Decreasing,Hudsonian Godwit,25
+Shorebirds,Decreasing,Killdeer,25
+Shorebirds,Decreasing,Lesser YellowlegsLong-billed Curlew,25
+Shorebirds,Decreasing,Long-billed Dowitcher,25
+Shorebirds,Decreasing,Marbled Godwit,25
+Shorebirds,Decreasing,Pectoral Sandpiper,25
+Shorebirds,Decreasing,Piping Plover,25
+Shorebirds,Decreasing,Purple Sandpiper,25
+Shorebirds,Decreasing,Red Knot,25
+Shorebirds,Decreasing,Ruddy Turnstone,25
+Shorebirds,Decreasing,Sanderling,25
+Shorebirds,Decreasing,Semipalmated Sandpiper,25
+Shorebirds,Decreasing,Short-billed Dowitcher,25
+Shorebirds,Decreasing,Spotted Sandpiper,25
+Shorebirds,Decreasing,Stilt Sandpiper,25
+Shorebirds,Decreasing,Wandering Tattler,25
+Shorebirds,Decreasing,Western Sandpiper,25
+Shorebirds,Decreasing,Whimbrel,25
+Shorebirds,Decreasing,Willet[A],25
+Shorebirds,Data deficient,American Oystercatcher,11
+Shorebirds,Data deficient,Buff-breasted Sandpiper,11
+Shorebirds,Data deficient,Common Ringed Plover,11
+Shorebirds,Data deficient,Eskimo Curlew,11
+Shorebirds,Data deficient,Mountain Plover,11
+Shorebirds,Data deficient,Pacific Golden-Plover,11
+Shorebirds,Data deficient,Red Phalarope,11
+Shorebirds,Data deficient,Red-necked Phalarope,11
+Shorebirds,Data deficient,Ruff,11
+Shorebirds,Data deficient,Sharp-tailed Sandpiper,11
+Shorebirds,Data deficient,Snowy Plover,11
+Grassland birds,Increasing,Ferruginous Hawk,4
+Grassland birds,Increasing,Prairie Falcon,4
+Grassland birds,Increasing,Swainson's Hawk,4
+Grassland birds,Increasing,Upland Sandpiper[A],4
+Grassland birds,Stable,Grasshopper Sparrow,4
+Grassland birds,Stable,Long-billed Curlew,4
+Grassland birds,Stable,Sharp-tailed Grouse,4
+Grassland birds,Stable,Western Kingbird,4
+Grassland birds,Decreasing,American Kestrel,17
+Grassland birds,Decreasing,Baird's Sparrow,17
+Grassland birds,Decreasing,Bobolink,17
+Grassland birds,Decreasing,Chestnut-collared Longspur,17
+Grassland birds,Decreasing,Eastern Meadowlark,17
+Grassland birds,Decreasing,Horned Lark,17
+Grassland birds,Decreasing,Lark Bunting,17
+Grassland birds,Decreasing,Le Conte's Sparrow,17
+Grassland birds,Decreasing,Loggerhead Shrike,17
+Grassland birds,Decreasing,McCown's Longspur,17
+Grassland birds,Decreasing,Northern Harrier,17
+Grassland birds,Decreasing,Savannah Sparrow,17
+Grassland birds,Decreasing,Short-eared Owl,17
+Grassland birds,Decreasing,Sprague's Pipit,17
+Grassland birds,Decreasing,Vesper Sparrow,17
+Grassland birds,Decreasing,Western Meadowlark,17
+Grassland birds,Decreasing,Willet[A],17
+Grassland birds,Data deficient,Barn Owl,8
+Grassland birds,Data deficient,Burrowing Owl,8
+Grassland birds,Data deficient,Dickcissel,8
+Grassland birds,Data deficient,Eskimo Curlew,8
+Grassland birds,Data deficient,Greater Sage-Grouse,8
+Grassland birds,Data deficient,Henslow's Sparrow,8
+Grassland birds,Data deficient,Mountain Plover,8
+Grassland birds,Data deficient,Northern Bobwhite,8
+Aerial insectivores,Increasing,n/a,0
+Aerial insectivores,Stable,Common Poorwill,3
+Aerial insectivores,Stable,Purple Martin,3
+Aerial insectivores,Stable,Violet-green Swallow,3
+Aerial insectivores,Decreasing,Bank Swallow,13
+Aerial insectivores,Decreasing,Barn Swallow,13
+Aerial insectivores,Decreasing,Black Swift,13
+Aerial insectivores,Decreasing,Chimney Swift,13
+Aerial insectivores,Decreasing,Cliff Swallow,13
+Aerial insectivores,Decreasing,Common Nighthawk,13
+Aerial insectivores,Decreasing,Eastern Whip-poor-will,13
+Aerial insectivores,Decreasing,Eastern Wood-Pewee,13
+Aerial insectivores,Decreasing,Northern Rough-winged Swallow,13
+Aerial insectivores,Decreasing,Olive-sided Flycatcher,13
+Aerial insectivores,Decreasing,Tree Swallow,13
+Aerial insectivores,Decreasing,Vaux's Swift,13
+Aerial insectivores,Decreasing,Western Wood-Pewee[A],13
+Aerial insectivores,Data deficient,Chuck-will's-widow,2
+Aerial insectivores,Data deficient,White-throated Swift,2
+Total[B],Increasing,Species listed above within each species group,131
+Total[B],Stable,Species listed above within each species group,83
+Total[B],Decreasing,Species listed above within each species group,128
+Total[B],Data deficient,Species listed above within each species group,107
+Total[B],Total,Species listed above within each species group,449
