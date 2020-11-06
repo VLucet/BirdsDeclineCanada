@@ -1,18 +1,18 @@
 ---
 title: "Are the trends in Quebec seabird abundances reflective of the Canada-wide trends?"
 subtitle: "LDP Reproducibility course - Assignment 2 Mock Manuscript"
-author: "Alexandra McCallum, Valentin Lucet, Jihyun Kim, Sherry Young"
+author: "Jihyun Kim, Alexandra McCallum, Valentin Lucet, Sherry Young"
 header-includes:
 - \usepackage{setspace}\doublespacing 
 - \usepackage[style=authoryear-comp]{biblatex}
 bibliography: Assignment_2.bib
 output: 
-  pdf_document: 
-    toc: FALSE
-    latex_engine: pdflatex
   html_document:
     toc: TRUE
     toc_float: TRUE
+  pdf_document: 
+    toc: FALSE
+    latex_engine: pdflatex
 ---
 
 ```{r setup, include=FALSE}
