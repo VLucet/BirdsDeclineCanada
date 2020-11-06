@@ -1566,7 +1566,7 @@ div.tocify {
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Northern seabirds are key players in the environment and valuable bioindicators. At high latitudes, Canadian biodiversity and landscapes present a high sensitivity to climate changes <span class="citation">(Groisman and Soja 2007)</span>. The impacts of global warming raise concerns regarding the future of Canada’s natural resources and biodiversity. Since 1970, Canadian population trends of seabirds have shown a slight increase <span class="citation">(ECC Canada 2012)</span>. However, the warming of the ocean, the exponential increase of habitat fragmentation, the expansion of urban communities and other anthropogenic impacts (e.g. fisheries), the global deterioration of seabird environments leaves the observed national trends unexpected <span class="citation">(Stenhouse et al. 2018)</span>. Thus, in this study, we seek to further evaluate this trend of Canadian seabird abundance and see if provincial trends are reflective of these larger scale trends. Environment and Climate Change Canada has been monitoring seabird abundance in Quebec since 1970. Therefore, Quebec serves as a good province to compare seabird abundance changes over time to Canada-wide trends. We expect to find similar trends among the seabird species at both spatial scales.</p>
+<p>Northern seabirds are key players in the environment and valuable bioindicators. At high latitudes, Canadian biodiversity and landscapes present a high sensitivity to climate changes <span class="citation">(Groisman and Soja 2007)</span>. The impacts of global warming raise concerns regarding the future of Canada’s natural resources and biodiversity. Since 1970, Canadian population trends of seabirds have shown a slight increase <span class="citation">(ECC Canada 2012)</span>. However, ocean warming, the exponential increase of habitat fragmentation, the expansion of urban communities and other anthropogenic impacts (e.g. fisheries) as well as the global deterioration of seabird environments leave the observed national trends unexpected <span class="citation">(Stenhouse et al. 2018)</span>. Thus, in this study, we seek to further evaluate this trend of Canadian seabird abundance and see if provincial trends are reflective of these larger scale trends. Environment and Climate Change Canada has been monitoring seabird abundance in Quebec since 1970. Therefore, Quebec serves as a good province to compare seabird abundance changes over time to Canada-wide trends. We expect to find similar trends among the seabird species at both spatial scales.</p>
 </div>
 <div id="methods" class="section level2">
 <h2>Methods</h2>
@@ -1574,7 +1574,7 @@ div.tocify {
 <p>We then accessed the Computerized Database of Québec Seabirds <span class="citation">(ECC CDQS 2020)</span> (CDQS), which contains monitoring data from a number of seabird colonies in Quebec. We crossed reference species names with the federal trends dataset and identified 16 matching species which represent about 28% of the species in the federal database. We only kept species for which enough data have been collected (more than 30 data points since 1970), cutting down the list of species to 14. They are listed in Table 1 and Figure 2.</p>
 <p>The monitoring data from the CDQS is incomplete, as not all colonies have been surveyed every year (as can be seen in Figure 3). Although the CDQS contains data going back all the way to the 1800s, we filtered the dataset down to data collected from 1970, in order to allow the comparison with the federal trends. Not all colonies have been sampled starting in 1970, and not all colonies have been sampled all the way to 2016 (Figure 3). In addition, not all colonies behave similarly, with some colonies doing exceptionally well in peak years. Finally, the raw abundances reported in the CDQS cannot be compared with the trends from the federal dataset which were obtained through a modeling effort <span class="citation">(ECC Canada 2012)</span>.</p>
 <p>For these reasons, it was necessary to model the CDQS bird abundance in order to determine trends. Although it would have been ideal to replicate the methodology employed to determine the federal trends, It was not possible for us to do so due to time constraints. Instead, we used a very simple smoothing model on the mean abundance per year (<code>loess</code> function in R). We then calculated the difference in the predicted mean abundances for 1970 versus for 2016, from which we derived a percentage change (results of the modelling effort are shown in Figure 4). We used this value to determine the trend for Quebec seabirds (displayed in Table 1). A bird was classified as stable if the percentage change was between -15% and +15%. It was classified either as decreasing if that percentage fell below -15% and increasing if it fell above 15%. It is important to note that those percentages should not be interpreted directly as accurate predictions of change, as our simple modelling approach is likely not robust enough in that regard. Instead, they are to be used only as an indicator of the direction of change. In this sense, we believe this approach is appropriate to identify trends.</p>
-<p>All data and code is accessible through the github repository, which is setup to replicate the computing environment used to generate the results.</p>
+<p>All data and code is accessible through the <a href="https://github.com/VLucet/BirdsDeclineCanada"><strong>github repository</strong></a>, which is setup to replicate the computing environment used to generate the results.</p>
 </div>
 <div id="results" class="section level2">
 <h2>Results</h2>
@@ -1593,7 +1593,7 @@ div.tocify {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hullfmaebf .gt_table {
+#cvbaqawhfv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1618,7 +1618,7 @@ div.tocify {
   border-left-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_heading {
+#cvbaqawhfv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1630,7 +1630,7 @@ div.tocify {
   border-right-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_title {
+#cvbaqawhfv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1640,7 +1640,7 @@ div.tocify {
   border-bottom-width: 0;
 }
 
-#hullfmaebf .gt_subtitle {
+#cvbaqawhfv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1650,13 +1650,13 @@ div.tocify {
   border-top-width: 0;
 }
 
-#hullfmaebf .gt_bottom_border {
+#cvbaqawhfv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_col_headings {
+#cvbaqawhfv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1671,7 +1671,7 @@ div.tocify {
   border-right-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_col_heading {
+#cvbaqawhfv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1691,7 +1691,7 @@ div.tocify {
   overflow-x: hidden;
 }
 
-#hullfmaebf .gt_column_spanner_outer {
+#cvbaqawhfv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1703,15 +1703,15 @@ div.tocify {
   padding-right: 4px;
 }
 
-#hullfmaebf .gt_column_spanner_outer:first-child {
+#cvbaqawhfv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hullfmaebf .gt_column_spanner_outer:last-child {
+#cvbaqawhfv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hullfmaebf .gt_column_spanner {
+#cvbaqawhfv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1723,7 +1723,7 @@ div.tocify {
   width: 100%;
 }
 
-#hullfmaebf .gt_group_heading {
+#cvbaqawhfv .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1745,7 +1745,7 @@ div.tocify {
   vertical-align: middle;
 }
 
-#hullfmaebf .gt_empty_group_heading {
+#cvbaqawhfv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1760,15 +1760,15 @@ div.tocify {
   vertical-align: middle;
 }
 
-#hullfmaebf .gt_from_md > :first-child {
+#cvbaqawhfv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hullfmaebf .gt_from_md > :last-child {
+#cvbaqawhfv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hullfmaebf .gt_row {
+#cvbaqawhfv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1787,7 +1787,7 @@ div.tocify {
   overflow-x: hidden;
 }
 
-#hullfmaebf .gt_stub {
+#cvbaqawhfv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1799,7 +1799,7 @@ div.tocify {
   padding-left: 12px;
 }
 
-#hullfmaebf .gt_summary_row {
+#cvbaqawhfv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1809,7 +1809,7 @@ div.tocify {
   padding-right: 5px;
 }
 
-#hullfmaebf .gt_first_summary_row {
+#cvbaqawhfv .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1819,7 +1819,7 @@ div.tocify {
   border-top-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_grand_summary_row {
+#cvbaqawhfv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1829,7 +1829,7 @@ div.tocify {
   padding-right: 5px;
 }
 
-#hullfmaebf .gt_first_grand_summary_row {
+#cvbaqawhfv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1839,11 +1839,11 @@ div.tocify {
   border-top-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_striped {
+#cvbaqawhfv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hullfmaebf .gt_table_body {
+#cvbaqawhfv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1852,7 +1852,7 @@ div.tocify {
   border-bottom-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_footnotes {
+#cvbaqawhfv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1866,13 +1866,13 @@ div.tocify {
   border-right-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_footnote {
+#cvbaqawhfv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#hullfmaebf .gt_sourcenotes {
+#cvbaqawhfv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1886,46 +1886,46 @@ div.tocify {
   border-right-color: #D3D3D3;
 }
 
-#hullfmaebf .gt_sourcenote {
+#cvbaqawhfv .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#hullfmaebf .gt_left {
+#cvbaqawhfv .gt_left {
   text-align: left;
 }
 
-#hullfmaebf .gt_center {
+#cvbaqawhfv .gt_center {
   text-align: center;
 }
 
-#hullfmaebf .gt_right {
+#cvbaqawhfv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hullfmaebf .gt_font_normal {
+#cvbaqawhfv .gt_font_normal {
   font-weight: normal;
 }
 
-#hullfmaebf .gt_font_bold {
+#cvbaqawhfv .gt_font_bold {
   font-weight: bold;
 }
 
-#hullfmaebf .gt_font_italic {
+#cvbaqawhfv .gt_font_italic {
   font-style: italic;
 }
 
-#hullfmaebf .gt_super {
+#cvbaqawhfv .gt_super {
   font-size: 65%;
 }
 
-#hullfmaebf .gt_footnote_marks {
+#cvbaqawhfv .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="hullfmaebf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="cvbaqawhfv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
@@ -2035,12 +2035,12 @@ div.tocify {
 </div>
 <div id="discussion" class="section level2">
 <h2>Discussion</h2>
-<p>Marine seabirds are valuable bioindicators. However, they face various threats due to ocean warming, habitat fragmentation and other impacts that could drive abundance changes. Knowing the abundance trends of seabirds can help to better understand how threats are affecting these birds. In Canada, the Atlantic Puffin (Fratercula arctica), the Common Murre (Uria aalge) and the Black Guillemot (Cepphus grylle) present discrepancies in their abundance trends between the province of Quebec and Canada.</p>
-<p>In eastern Canada, there is currently approximately 350,000 to 40,000 breeding Atlantic puffins. Most are found in Newfoundland and Labrador. <span class="citation">(Cornell lab of Ornithology 2020b)</span> (Nature Conservancy Canada). We found that for Canada, there is a trend showing an increase in puffin abundance. However, we find decreasing trends of abundance when looking at Quebec on a province-size scale.</p>
+<p>Marine seabirds are valuable bioindicators. However, they face various threats due to ocean warming, habitat fragmentation and other impacts that could drive abundance changes. Knowing the abundance trends of seabirds can help to better understand how threats are affecting these birds. In Canada, the Atlantic Puffin (<em>Fratercula arctica</em>), the Common Murre (<em>Uria aalge</em>) and the Black Guillemot (<em>Cepphus grylle</em>) present discrepancies in their abundance trends between the province of Quebec and Canada.</p>
+<p>In eastern Canada, there is currently approximately 350,000 to 40,000 breeding Atlantic puffins. Most are found in Newfoundland and Labrador <span class="citation">(Cornell lab of Ornithology 2020b)</span>. We found that for Canada, there is a trend showing an increase in puffin abundance. However, we find decreasing trends of abundance when looking at Quebec on a province-size scale.</p>
 <p>The abundance of seabirds can depend on the health and availability of their food sources. As seabirds that rely heavily on food from the ocean, Atlantic puffin abundance and population health can be impacted by the presence or absence of prey fish. In turn, the prey fish availability which is affected by the primary productivity of the waters they feed in. A study by <span class="citation">Baillie and Jones (2004)</span> examined the impacts of the absence of capelin, a preferred food source for the Atlantic puffin, on the population’s abundance. They expected this to negatively impact on reproduction and adult survivorship in the Gannet islands, Labrador. However, they found that this change did not affect the puffin’s breeding and rearing of young as they found suitable alternative prey. Therefore, prey availability may not have affected the abundances of the puffins at either the Canada or Quebec scales.</p>
 <p>On a national scale, the increase in both the Atlantic puffin and the Black Guillemot population abundances trends can be explained by their habitat availability. Globally, as temperatures become increasingly warmer, it can be hypothesized that the loss of sea ice may provide suitable habitats for the puffins and guillemots. This impact starting at high latitudes might contribute to the increase of abundance not seen in Quebec where new possible habitat for populations is not occurring <span class="citation">(Wong et al. 2014)</span>. In addition, the proximity of colonies is expected to be a driver of persistence and occurrence of seabird densities.</p>
 <p>However, a recent report linked Black Guillemot population trends to habitat loss across their Canadian range under various global warming scenarios <span class="citation">(Audubon Field Guide 2020)</span>. It appears that habitat loss is proportional to increasing temperature across the range, with an acute habitat loss in Quebec. Black Guillemot are difficult species to record, therefore, it is difficult to evaluate other drivers that might lead to their population fluctuations. We believe that the current national trends are different from the provincial trends due to the combination of climatic and intense geographically located anthropogenic disturbances (e.g. urbanisation; habitat fragmentation/degradation), which negatively impact these specific communities in Quebec.</p>
-<p>The Common Murre (Uria aalge) accounts for one of the most abundant seabirds of the Northern Hemisphere. The number of Common Murres seems to have risen dramatically over the past 50 years <span class="citation">(ECC Canada 2020)</span> with a current stable population in Canada. Their population decline in Quebec could be due to legal poaching and hunting. Common Murre are also one of the species the most frequently found as a victim of by-catch in commercial net fisheries <span class="citation">(Smith and Morgan 2005)</span> and found oiled on beach bird surveys <span class="citation">(Hamel et al. 2009)</span> along the Pacific coast <span class="citation">(BC Breeding Bird Atlas 2020)</span>. It is thought that most of these individuals come from breeding colonies in the south closer to the Quebec region. However, currently The North American Waterbird Conservation Plan estimates a population of 4,250,000 in North America, rates the species an 11 out of 20 on the Continental Concern Score, and lists it as a Species of Moderate Concern <span class="citation">(Cornell lab of Ornithology 2020a)</span>.</p>
+<p>The Common Murre (<em>Uria aalge</em>) accounts for one of the most abundant seabirds of the Northern Hemisphere. The number of Common Murres seems to have risen dramatically over the past 50 years <span class="citation">(ECC Canada 2020)</span> with a current stable population in Canada. Their population decline in Quebec could be due to legal poaching and hunting. Common Murre are also one of the species the most frequently found as a victim of by-catch in commercial net fisheries <span class="citation">(Smith and Morgan 2005)</span> and found oiled on beach bird surveys <span class="citation">(Hamel et al. 2009)</span> along the Pacific coast <span class="citation">(BC Breeding Bird Atlas 2020)</span>. It is thought that most of these individuals come from breeding colonies in the south closer to the Quebec region. However, currently The North American Waterbird Conservation Plan estimates a population of 4,250,000 in North America, rates the species an 11 out of 20 on the Continental Concern Score, and lists it as a Species of Moderate Concern <span class="citation">(Cornell lab of Ornithology 2020a)</span>.</p>
 <div id="limitations" class="section level3">
 <h3>Limitations</h3>
 <p>Differences in data collection methods may have influenced the trends and the differences we found between the Canada and Quebec abundances. However, other biological and natural causes may be affecting and causing these differences as we’ve discussed above. Another limitation to this comparison is that we do not know if Quebec data is independent of the Canada data, and if Quebec is not a random sample.</p>
